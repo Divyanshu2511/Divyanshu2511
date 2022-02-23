@@ -21,7 +21,7 @@
 </tr>
 </tbody>
 <tfoot>
-<tr>
+<tr id='third'>
 <td>Sum</td>
 <td>$180</td>
 </tr>
@@ -31,7 +31,7 @@
 <script>
 
  //1
- document.getElementById('first ').innerHTML;
+ document.getElementById('first').innerHTML;
 
  //2
  let third = document.querySelector('#second .salary').innerHTML = '$100';
@@ -62,7 +62,7 @@ let ba=10;
  aa =15;
  ba = 9;
 const ca =10;
-// we cannot update ca here.
+ca=5; // we cannot update ca here.
 
 
 //7 
@@ -156,3 +156,6 @@ function fullname(){
 	}
 	name()
 }
+</script>
+</body>
+</html>
