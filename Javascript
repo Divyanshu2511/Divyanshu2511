@@ -1,0 +1,158 @@
+<html>
+<body>
+
+<h1>The thead, tbody, and tfoot elements</h1>
+
+<table>
+<thead>
+<tr>
+<th>Month</th>
+<th>Savings</th>
+</tr>
+</thead>
+<tbody>
+<tr id='first' >
+<td class ='month'>January</td>
+<td class='salary'>$100</td>
+</tr>
+<tr id='second' > 
+<td class ='month'>February</td>
+<td class='salary' >$0</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td>Sum</td>
+<td>$180</td>
+</tr>
+</tfoot>
+</table>
+
+<script>
+
+ //1
+ document.getElementById('first ').innerHTML;
+
+ //2
+ let third = document.querySelector('#second .salary').innerHTML = '$100';
+
+ //3 
+
+ document.querySelector('tbody').childNodes[3].childNodes[3].innerHTML='$8000';
+
+//4
+
+let a = document.createElement('div');
+let b = document.createElement('h1');
+b.textContent = 'Hello World !';
+a.appendChild(b);
+document.body.appendChild(a);
+ a.id = third;
+
+//5 
+
+let c = document.querySelector('#third')
+let textcontent=c.textContent
+console.log(textcontent)
+
+6//
+
+var aa=10;
+let ba=10;
+ aa =15;
+ ba = 9;
+const ca =10;
+// we cannot update ca here.
+
+
+//7 
+let greeting;
+const time = new Date().getHours();
+if (time < 10) {
+  greeting = "Good morning";
+} else if (time < 20) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
+
+
+//8
+let text;
+const time = new Date().getHours();
+switch (time) {
+  case 6:
+    text = "Today is Saturday";
+    break;
+  case 0:
+    text = "Today is Sunday";
+    break;
+  default:
+    text = "Looking forward to the Weekend";
+}
+
+//9
+//print table of 2 using do while
+var i=12
+do{
+	console.log(2*i)
+	i++
+}
+while(i<11)
+
+
+//10
+
+const number = [45, 4, 9, 16, 25];
+
+let txt = " ";
+number.forEach(myFunction)
+console.log(txt);
+function myFunction(value) {
+  txt += value + ' ';
+}
+
+
+//11
+function hello(){
+	console.log("Hello JavaScript")
+}
+hello()
+
+
+//12
+function add(a,b){
+	return a+b
+}
+console.log(add(5,10));
+
+
+//13
+//Function Expression
+let sayHi=function(){
+	alert('Function Expression')
+}
+(function () {
+  let x = "Hello!!";  // self invoking function
+})();
+
+
+//14
+
+var firstname='Hyy' //global
+function hello(){
+	let date=22   //local
+	console.log(firstname)    // access global variable 
+}
+hello()
+
+
+//15
+var name='Hyy' //global
+function fullname(){
+	var lastname='World'
+	function name(){
+		console.log(name+" "+lastname)
+	}
+	name()
+}
